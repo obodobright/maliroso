@@ -1,0 +1,911 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 2rem 4rem;
+}
+
+.navbar {
+  /* width: 100%; */
+  height: 80px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  padding: 5px 40px;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.navbar .navContainer {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .navContainer li {
+  margin: 0.5rem 2rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar .navContainer li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .navContainer li:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  border-bottom: 2px solid #0cad8e;
+}
+
+.navbar .navContainer li a:hover {
+  border-bottom: 2px solid #0cad8e;
+  transition: all 350ms;
+}
+
+.navbar .navRightWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .navRightWrapper h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.heroContainer {
+  /* width: 100%; */
+  min-height: 80vh;
+  background-color: red;
+  background-image: url("/image/bgImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 30px;
+}
+.heroContainer .heroContent {
+  max-width: 400px;
+  padding: 5px 10px;
+  padding-top: 30px;
+}
+.heroContainer .heroContent h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.heroContainer .heroContent .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContainer .heroContent button {
+  margin: 5px auto;
+  border-radius: 70px;
+  padding: 12px 1.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  color: #0cad8e;
+  font-size: 18px;
+  background-color: #f1ddc4;
+}
+
+.boxContainer {
+  background-color: #f6f6f6;
+  padding: 2rem 3rem;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  border-radius: 12px;
+}
+
+.boxContainer .box h3 {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+.boxContainer .box p {
+  color: #0cad8e;
+  font-size: 14px;
+}
+
+.boxGallery {
+  position: relative;
+  top: -30px;
+  max-width: 980px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 10px;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.boxGalleryImg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.boxGalleryImg img {
+  width: 150px;
+  /* margin: 0.1rem 1rem; */
+}
+
+.analyticsContainer {
+  padding: 20px 25px;
+  background: white;
+  width: fit-content;
+  border-radius: 26px;
+}
+
+.analyticsContainer .analyticsCard {
+  padding: 10px;
+}
+
+.analyticsContainer .analyticsCard h3 {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: arial;
+  margin: 0 !important;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.analyticsContainer .analyticsCard .info {
+  padding: 0.7rem 1.5rem;
+  background-color: #f1ddc4;
+  width: fit-content;
+  border-radius: 128px;
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+}
+
+.analyticsContainer .analyticsCard span {
+  position: relative;
+}
+
+.serviceInfo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  padding: 20px 3rem;
+  justify-items: center;
+}
+
+.serviceContainer {
+}
+
+.serviceContainer h3 {
+  font-weight: 700;
+  font-size: 40px;
+  max-width: 300px;
+  color: #000000;
+}
+
+.serviceContainer p {
+  font-size: 16px;
+  margin: 10px 0px;
+  font-weight: normal;
+  max-width: 500px;
+}
+
+.serviceContainer img {
+  width: 400px;
+}
+
+.investmentContainer {
+  background-color: #ebebeb;
+  /* width: 100%; */
+  padding: 4rem 5rem;
+  position: relative;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.investmentContainer .bgImg {
+  width: 500px;
+  position: absolute;
+  right: -40px;
+  top: 100px;
+}
+.investmentContent {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.investmentContent h3 {
+  font-weight: 700;
+  font-size: 50px;
+  max-width: 650px;
+  line-height: 0.9;
+}
+
+.investmentContainer p {
+  max-width: 700px;
+  margin-top: 10px;
+}
+
+.wrapper {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* align-items: center;
+  justify-content: center; */
+  gap: 20px;
+}
+
+.investmentContainer .investmentBadge {
+  background-color: #0cad8e;
+  padding: 3px 14px;
+  border: 4px solid white;
+  border-radius: 128px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  left: 235px;
+  top: 50px;
+  transform: rotate(-4deg);
+}
+
+.investmentContainer .investmentCardWrapper {
+  padding: 2rem 2rem;
+  background-color: white;
+  border-radius: 21px;
+  max-width: 250px;
+}
+
+.cardWrapperContent h3 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.cardWrapperContent p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.investmentCardWrapper img {
+  width: 60px;
+  margin-bottom: 4rem;
+}
+
+.investmentCardWrapper:nth-child(2) {
+  position: relative;
+  top: 40px;
+}
+
+.primaryBtn {
+  /* margin: 5px auto; */
+  border-radius: 70px;
+  padding: 12px 1.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  font-weight: 700;
+  color: #0cad8e;
+  font-size: 16px;
+  background-color: #f1ddc4;
+}
+
+.buttonWrapper {
+  margin-top: 1rem;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1ddc4;
+  border-radius: 50%;
+}
+
+.statsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.statsContent {
+  max-width: 400px;
+  padding: 20px;
+}
+.statsImg {
+  max-width: 500px;
+}
+.statsContent h3 {
+  font-size: 45px;
+  font-size: 700;
+}
+
+.statsContent p {
+  font-size: 16px;
+  color: #888888;
+}
+
+.infoDataContent {
+  position: relative;
+}
+
+.infoDataImg {
+  width: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  right: 0;
+  /* display: none; */
+}
+.infoData h3 {
+  max-width: 400px;
+  font-size: 44px;
+  font-weight: 700;
+  position: relative;
+}
+.infoData p {
+  max-width: 600px;
+  font-size: 16px;
+  color: #838384;
+}
+.infoVideo {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.landmarkWrapper {
+  background-color: #ebebeb;
+  max-width: 650px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 4rem;
+  padding-right: 0px;
+  margin: 0.5rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.landMarkContent {
+  background-color: white;
+  /* max-width: 200px; */
+  padding: 20px;
+  border-radius: 14px;
+}
+.landMarkContent h3 {
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 1.3rem;
+}
+.landMarkContent p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.landmarkImg img {
+  width: 150px;
+  /* height: 665px; */
+  position: relative;
+  /* right: -100px; */
+}
+
+.contentTitle {
+  font-size: 45px;
+  font-weight: 700;
+}
+.contentContainer {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  position: relative;
+}
+
+.landmarkWrapper .bgImg {
+  width: 500px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+
+.svgIcon {
+  position: absolute;
+  width: 80px;
+  bottom: -60px;
+  right: 0;
+}
+.svgIcon2 {
+  position: absolute;
+  width: 60px;
+  top: 50px;
+  left: 0;
+}
+
+.footerContainer {
+  width: 100%;
+}
+
+.footerWrapper {
+  max-width: 750px;
+  background-color: white;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  margin: auto;
+}
+.footerWrapperBottom {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerWrapperBottomSocials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.footerWrapperTop {
+  display: flex;
+  padding: 30px;
+}
+.footerWrapper .logo {
+  width: 50px;
+  height: 50px;
+  background-color: #0cad8e;
+  border-radius: 50%;
+}
+
+.bottomNavLink {
+  margin: 0.5rem 1.5rem;
+}
+.bottomNavLink ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bottomNavLink ul li:first-child {
+  font-size: 18px;
+  color: #cf8900;
+  font-weight: 600;
+}
+
+.bottomNavLink ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7b7b7b;
+  margin: 0.7rem auto;
+}
+.footerNavLik {
+  display: flex;
+  align-items: start;
+}
+
+.footerContent {
+  color: #888888;
+  font-weight: 400;
+  margin-top: 10px;
+  max-width: 250px;
+}
+
+.collabContainer {
+  width: 100%;
+  background-color: black;
+}
+
+.colabTitle {
+  font-size: 45px;
+  color: white;
+  font-weight: 600;
+}
+
+.collabNews {
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  background-color: #1b1b1b;
+}
+.collabNews img {
+  width: 100%;
+}
+
+.collabContent {
+  margin-top: 1rem;
+  padding: 20px;
+}
+
+.colabContentTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.colabContentTop .collabBadge {
+  padding: 5px 12px;
+  background-color: #b8ccff;
+  border-radius: 46px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 800;
+}
+.colabContentTop p {
+  color: white;
+  font-size: 16px;
+}
+
+.collabContentText {
+  margin-top: 20px;
+}
+
+.collabContentText h3 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.collabContentText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.newCard {
+  background-color: #1b1b1b;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.newCard .badge {
+  padding: 5px 12px;
+  background-color: #c5ffc8;
+  border-radius: 46px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.badge2 {
+  padding: 5px 12px;
+  background-color: #ffe0a3;
+  border-radius: 46px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 800;
+}
+.badge3 {
+  padding: 5px 12px;
+  background-color: #ddc3ff;
+  border-radius: 46px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 800;
+}
+.badge4 {
+  padding: 5px 12px;
+  background-color: #64cab7;
+  border-radius: 46px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.newCard p {
+  /* margin-top: 10px; */
+  color: #747474;
+  font-size: 12px;
+}
+.newCard h3 {
+  color: white;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.leftContainer img {
+  width: 100px;
+}
+
+.leftContainerContent {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.collabWrapper {
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.viewMorBtn {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.viewMorBtn p {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.uniContainer {
+  /* background-color: red; */
+}
+
+.uniWrapper {
+  padding: 20px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.uniWrapper h3 {
+  font-size: 45px;
+  font-size: 700;
+  color: #000000;
+}
+
+.uniBgImg {
+  width: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.uniImg1 {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.uniImgFull {
+  width: 400px;
+}
+.sideImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgInUni {
+  display: flex;
+  gap: 20px;
+}
+.sideImg {
+  width: 150px;
+}
+
+.uniContent {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.uniContent h3 {
+  font-size: 30px;
+}
+
+.uniContent p {
+  color: #888888;
+  font-size: 16;
+}
+
+.myUniFlex {
+  display: flex;
+  gap: 100px;
+}
+
+.promotionContainer {
+  min-height: 50vh;
+  background-image: url("/image/background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 3rem 5rem;
+  background-color: #eefffc;
+  border: 4px solid white;
+  border-radius: 32px;
+}
+
+.promotionWrapper {
+  max-width: 350px;
+  padding: 10px;
+}
+.promotionWrapper h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.promotionWrapper p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.promotionWrapper h3 span {
+  color: #00000080;
+}
+
+@media (max-width: 768px) {
+  .body {
+    overflow: hidden;
+  }
+  .container {
+    padding: 0.5rem 0.5rem;
+    max-width: 750px;
+  }
+
+  .navbar {
+    /* display: block; */
+  }
+  .navbar .navContainer {
+    display: none;
+  }
+  .boxGallery {
+    max-width: 700px;
+  }
+  .boxGalleryImg {
+    flex-wrap: wrap;
+  }
+  .boxGalleryImg img {
+    width: 70px;
+  }
+  .boxContainer {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .serviceInfo {
+    display: block;
+    padding: 30px;
+    /* padding: 20px; */
+  }
+
+  .analyticsContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .serviceContainer img {
+    width: 100%;
+  }
+  .investmentContainer {
+    padding: 0.5rem 0.7rem;
+  }
+  .investmentContent h3 {
+    width: 100%;
+    max-width: none;
+  }
+  .investmentContainer .investmentBadge {
+    left: 300px;
+  }
+  .wrapper {
+    display: grid;
+  }
+  .investmentCardWrapper:nth-child(2) {
+    top: 0;
+  }
+  .statsContainer {
+    display: block;
+  }
+  .statsImg {
+    width: 100%;
+    max-width: none;
+    /* display: none; */
+  }
+  .landmarkWrapper {
+    padding: 1rem;
+    display: block;
+  }
+  .svgIcon2 {
+    display: none;
+  }
+  .landmarkImg {
+    display: none;
+  }
+  .svgIcon {
+    width: 50px;
+    bottom: -30px;
+  }
+
+  .collabWrapper {
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .viewMorBtn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .boxContainer {
+    display: none;
+  }
+
+  .analyticsContainer .analyticsCard h3 {
+    font-size: 30px;
+  }
+  .analyticsContainer .analyticsCard .info {
+    padding: 0.5rem 1rem;
+    top: -7px;
+  }
+
+  .investmentContainer .investmentBadge {
+    display: none;
+  }
+  .promotionContainer {
+    padding: 10px;
+  }
+
+  .footerWrapper {
+    max-width: none;
+    width: 100%;
+  }
+  .footerWrapperTop,
+  .footerWrapperBottom,
+  .footerNavLik {
+    display: block;
+  }
+  .bottomNavLink {
+    margin: 0;
+  }
+  .footerWrapperBottomSocials {
+    margin-top: 10px;
+  }
+}
